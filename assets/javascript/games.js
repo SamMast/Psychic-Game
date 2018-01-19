@@ -9,7 +9,7 @@ var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log(computerGuess)
 
-function winAdd() {
+function winAdd(x) {
 	winCount++;
 	document.getElementById("winCount").textContent = winCount;
 }
@@ -52,11 +52,11 @@ document.onkeyup = function(event) {
 			guessMinus();
 
 	       	guessesSoFar.push(userGuess);
-
 	        document.getElementById("guessesSoFar").textContent = guessesSoFar;
 
 	        if (guessesLeft === 0) {
 	        	alert("Out of Guesses. You Lose this Round. The letter was " + computerGuess + "!");
+
 	        	lossAdd();
 
 	        	guessesLeft = (guessesLeft + 10);
@@ -72,7 +72,7 @@ document.onkeyup = function(event) {
 	    } 
 
 	} else {
-		alert("Not a valid guess.  Please guess a letter you have not yet guessed.  Letters Only!")
+		alert("Not a valid guess.  Please guess a letter you have not yet guessed yet!")
 	}
 }
 
