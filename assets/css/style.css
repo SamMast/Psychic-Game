@@ -1,0 +1,57 @@
+body {
+	background-image: url("../images/crystalball.jpeg");
+	background-size: cover;
+	padding: 100px;
+	margin-top: 5%;
+}
+
+.header {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	color: #4B90CD;
+	margin-bottom: 20px;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.center {
+	width: 25%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+}
+
+.win,
+.loss {
+	height: 4%;
+}
+
+.win {
+	text-align: right;
+}
+
+.loss {
+	text-align: left;
+}
+
+.item {
+	height: 4%;
+}
+
+.instructions {
+	font-size: 200%;
+	margin-bottom: 2%;
+}
+
+.title {
+	font-size: 400%;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+@media screen and (min-width: 1441px) {
+	body {
+		font-size: 275%;
+	}
+}

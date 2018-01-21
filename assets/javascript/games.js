@@ -69,6 +69,13 @@ document.onkeyup = function(event) {
 				console.log(computerGuess);
 	        }
 
+	       	if (guessesLeft <= 5) {
+		    	document.getElementById("guessesLeft").style.color = "red";
+
+	        } else {
+	        	document.getElementById("guessesLeft").style.color = "black";
+
+	        }
 	    } 
 
 	} else {

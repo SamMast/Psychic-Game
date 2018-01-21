@@ -4,43 +4,47 @@
 	<head>
 		<title>Sam Mast - Psychic Game</title>
 		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<script src="assets/javascript/games.js"></script>
 
 	</head>
 	<body>
 
-		<header>
-			<h1>
+		<header class="header">
+			<h1 class="title">
 				The Psychic Game
 			</h1>
-			<p>
+			<p class="instructions">
 				Guess what Letter I am thinking of?
 			</p>
 		</header>
 
-		<div>
-			<div>
-				Wins:
-				<span id="winCount">
-					0
-				</span>
+		<div class="center container">
+			<div class="row">
+				<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6 win">
+					Wins:
+					<span id="winCount">
+						0
+					</span>
+				</div>
+				<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6 loss">
+					Losses:
+					<span id="lossCount">
+						0
+					</span>
+				</div>
 			</div>
-			<div>
-				Losses:
-				<span id="lossCount">
-					0
-				</span>
-			</div>
-			<div>
+
+			<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 item">
 				Guesses Left:
 				<span id="guessesLeft">
 					10
 				</span>
 			</div>
-			<div>
+			<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 item">
 				Your Guesses so far:
+				<br>
 				<span id="guessesSoFar">
 					...
 				</span>
@@ -52,4 +56,7 @@
 			<footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center navbar-fixed-bottom" id="footer">Copyright @ 2018 - Samuel Mast</footer>
 		</div>
 	</body>
+	
+	<script src="assets/javascript/games.js"></script>
+
 </html>
